@@ -1,0 +1,14 @@
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Warranties.exe.config
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Warranties.exe
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Warranties.pdb
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Warranties.xml
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vjsmi\source\repos\Warranties\Warranties\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.vbprojResolveAssemblyReference.cache
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.Form1.resources
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.Resources.resources
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.vbproj.GenerateResource.Cache
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.vbproj.CoreCompileInputs.cache
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.exe
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.xml
+C:\Users\vjsmi\source\repos\Warranties\Warranties\obj\Debug\Warranties.pdb
