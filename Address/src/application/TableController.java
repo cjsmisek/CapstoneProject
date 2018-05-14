@@ -153,6 +153,37 @@ public class TableController {
 
         ObservableList<Address> tableItems = DataSource.getData();
         addressTable.setItems( tableItems );
+
+        // Wrap observableList in filteredList
+        FilteredList<Address> filterData = new FilteredList<>(tableItems, p -> true);
+        // Set filter Predicate when filter changes
+        filterTxt.textProperty().addListener(((observable, oldValue, newValue) -> {
+            filterData.setPredicate(address1 -> {
+                // If filter is empty display all addresses
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+
+                // compare first and last name of filter text
+                String lowerCaseFilter = newValue.toLowerCase();
+
+                if (address1.getFirstName().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches first name.
+                } else if (address1.getLastName().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches last name.
+                }
+                return false; // Does not match.
+            });
+        }));
+
+        // Wrap the FilteredList in a SortedList.
+        SortedList<Address> sortedData = new SortedList<>(filterData);
+
+        // Bind the SortedList comparator to the TableView comparator.
+        sortedData.comparatorProperty().bind(addressTable.comparatorProperty());
+
+        // Add sorted (and filtered) data to the table.
+        addressTable.setItems(sortedData);
     }
 
     @FXML //Get Map button clicked

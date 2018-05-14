@@ -8,29 +8,35 @@
 
 <AnchorPane prefHeight="883.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableController">
     <children>
-        <TableView fx:id="addressTable" editable="true" layoutX="15.0" layoutY="100.0" prefHeight="697.0" prefWidth="670.0">
-            <columns>
-                <TableColumn fx:id="firstNameColumn" prefWidth="160.0" text="First Name" />
-                <TableColumn fx:id="lastNameColumn" prefWidth="160.0" text="Last Name" />
-                <TableColumn fx:id="addressColumn" prefWidth="350.0" text="Address" />
-            </columns>
-        </TableView>
-      <TextField id="fNameInput" fx:id="fNameInput" layoutX="14.0" layoutY="812.0" prefHeight="57.0" prefWidth="150.0" promptText="First Name" />
-      <TextField id="lNameInput" fx:id="lNameInput" layoutX="175.0" layoutY="812.0" prefHeight="57.0" prefWidth="150.0" promptText="Last Name" />
-      <TextField id="addressInput" fx:id="addressInput" layoutX="339.0" layoutY="810.0" prefHeight="57.0" prefWidth="220.0" promptText="Address" />
-      <Button id="addButton" fx:id="addButton" layoutX="576.0" layoutY="812.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="57.0" prefWidth="100.0" text="Add">
-         <font>
-            <Font size="26.0" />
-         </font></Button>
-      <TextField id="fNameInput" fx:id="filterTxt" layoutX="412.0" layoutY="30.0" prefHeight="57.0" prefWidth="264.0" />
-      <Label layoutX="161.0" layoutY="39.0" prefHeight="39.0" prefWidth="249.0" text="Filter First/Last Name:">
-         <font>
-            <Font size="24.0" />
-         </font></Label>
-      <Button fx:id="mapButton" layoutX="16.0" layoutY="30.0" mnemonicParsing="false" onAction="#mapButtonClicked" prefHeight="57.0" prefWidth="132.0" text="Get Map">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
+      <Pane id="Pane" prefHeight="883.0" prefWidth="700.0" style="-fx-background-color: #9C9A9A; -fx-border-color: black;">
+         <children>
+              <TableView fx:id="addressTable" editable="true" layoutX="15.0" layoutY="101.0" prefHeight="697.0" prefWidth="670.0">
+                  <columns>
+                      <TableColumn fx:id="firstNameColumn" prefWidth="160.0" text="First Name" />
+                      <TableColumn fx:id="lastNameColumn" prefWidth="160.0" text="Last Name" />
+                      <TableColumn fx:id="addressColumn" prefWidth="350.0" text="Address" />
+                  </columns>
+              </TableView>
+            <Button fx:id="mapButton" layoutX="15.0" layoutY="29.0" mnemonicParsing="false" onAction="#mapButtonClicked" prefHeight="57.0" prefWidth="132.0" text="Get Map">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField id="fNameInput" fx:id="fNameInput" layoutX="14.0" layoutY="804.0" prefHeight="57.0" prefWidth="150.0" promptText="First Name" />
+            <TextField id="lNameInput" fx:id="lNameInput" layoutX="182.0" layoutY="804.0" prefHeight="57.0" prefWidth="150.0" promptText="Last Name" />
+            <TextField id="addressInput" fx:id="addressInput" layoutX="350.0" layoutY="804.0" prefHeight="57.0" prefWidth="220.0" promptText="Address" />
+            <Button id="addButton" fx:id="addButton" layoutX="579.0" layoutY="804.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="57.0" prefWidth="100.0" text="Add">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <TextField id="fNameInput" fx:id="filterTxt" layoutX="415.0" layoutY="29.0" prefHeight="57.0" prefWidth="264.0" />
+            <Label layoutX="166.0" layoutY="38.0" prefHeight="39.0" prefWidth="249.0" style="-fx-text-fill: white;" text="Filter First/Last Name:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
     </children>
 </AnchorPane>
